@@ -1,0 +1,25 @@
+.signup {
+  height: calc(100vh - 47px);
+}
+
+.signupFormWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-height: 570px) {
+  .signup.page-dark {
+    background-color: #20232a;
+  }
+
+  .signup.page-light {
+    background-color: white;
+  }
+
+  .signupFormWrapper {
+    position: static;
+    transform: translate(0, 0);
+  }
+}

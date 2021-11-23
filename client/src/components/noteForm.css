@@ -1,0 +1,43 @@
+.noteForm {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 440px) {
+  .noteForm {
+    border-radius: 0px;
+    margin-top: 0px;
+    padding-top: 40px;
+  }
+}
+
+.noteFormInput {
+  border: 1px solid grey;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.noteFormInput:focus {
+  outline: none;
+}
+
+.noteFormButton {
+  border: none;
+  border-radius: 8px;
+  background-color: #1877f2;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  transition: all 0.2s ease-in;
+}
+
+.noteFormButton:hover {
+  cursor: pointer;
+  background-color: #156bdb;
+}

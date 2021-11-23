@@ -1,0 +1,46 @@
+.notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 47px);
+}
+
+.noteFormWrapper {
+  width: 400px;
+}
+
+@media screen and (max-width: 440px) {
+  .noteFormWrapper {
+    width: 100%;
+  }
+}
+
+.noteListWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1000px;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1006px) {
+  .noteListWrapper {
+    width: 100vw;
+  }
+}
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}

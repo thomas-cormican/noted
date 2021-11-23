@@ -1,0 +1,23 @@
+.App {
+  min-height: 100vh;
+}
+
+.page-light {
+  background-color: white;
+  color: black;
+}
+
+.page-dark {
+  background-color: #0b0d0f;
+  color: white;
+}
+
+.component-light {
+  background-color: white;
+  color: black;
+}
+
+.component-dark {
+  background-color: #20232a;
+  color: white;
+}

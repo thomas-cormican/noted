@@ -1,0 +1,167 @@
+.note {
+  margin: 16px;
+  width: 30%;
+  height: 200px;
+  border-radius: 4px;
+  position: relative;
+  box-shadow: 0px 6px 20px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1006px) {
+  .note {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 648px) {
+  .note {
+    width: 100%;
+    margin: 0x;
+  }
+
+  .note:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.noteContent {
+  height: 200px;
+  padding: 10px;
+}
+
+.noteTitle {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.noteDivider {
+  height: 1px;
+  position: relative;
+  border: none;
+  background-color: lightgrey;
+}
+
+.noteDivider.hide {
+  visibility: hidden;
+}
+
+.noteMessage {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  margin-top: 0px;
+}
+
+.noteBottom {
+  height: 20px;
+  transform: translateY(-20px);
+}
+
+.noteCreatedDate {
+  font-size: 12px;
+  color: grey;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.noteTitleEdit {
+  font-family: inherit;
+  font-weight: 500;
+  border: 1px solid grey;
+  width: 100%;
+  font-size: 1.5em;
+  transform: translate(-3px, -2px);
+  z-index: 100;
+}
+
+.noteTitleEdit:focus {
+  outline: none;
+}
+
+.noteMessageEdit {
+  font-family: inherit;
+  border: 1px solid grey;
+  width: 100%;
+  font-size: 1em;
+  transform: translate(-3px, -7px);
+  z-index: 10;
+}
+
+.noteMessageEdit:focus {
+  outline: none;
+}
+
+.noteButtons {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 2px;
+}
+
+.noteSaveButton {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  font-size: 30px;
+  border: none;
+  color: white;
+  background-color: #1877f2;
+  cursor: pointer;
+  transform: translate(50px, 0px);
+  z-index: 0;
+  transition: transform 0.2s ease-in;
+}
+
+.saveEnter {
+  transform: translate(0px, 0px);
+}
+
+.noteSaveButton:active {
+  background-color: #156bdb;
+  color: rgb(216, 216, 216);
+}
+
+.noteEditButton {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  font-size: 30px;
+  border: none;
+  color: white;
+  background-color: rgb(93, 199, 102);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.noteEditButton:active {
+  background-color: rgb(79, 168, 86);
+  color: rgb(216, 216, 216);
+}
+
+.noteDeleteButton {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  font-size: 30px;
+  border: none;
+  z-index: 10;
+  color: white;
+  background-color: crimson;
+  cursor: pointer;
+}
+
+.noteDeleteButton:active {
+  background-color: rgb(179, 18, 50);
+  color: rgb(216, 216, 216);
+}

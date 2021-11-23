@@ -1,0 +1,25 @@
+.login {
+  height: calc(100vh - 47px);
+}
+
+.loginFormWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-height: 570px) {
+  .login.page-dark {
+    background-color: #20232a;
+  }
+
+  .login.page-light {
+    background-color: white;
+  }
+
+  .loginFormWrapper {
+    position: static;
+    transform: translate(0, 0);
+  }
+}
